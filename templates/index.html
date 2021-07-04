@@ -214,18 +214,25 @@ body .cybr-btn + .cybr-btn {
 </head>
 <body>
     <body>
-      <button id="red" class="cybr-btn">
+      <form action="POST">
+        <button id="red" class="cybr-btn">
         Left<span aria-hidden>_</span>
         <span aria-hidden class="cybr-btn__glitch">RED_</span>
-        <span id="red-counter" aria-hidden class="cybr-btn__tag">0</span>
+        <span id="red-counter" aria-hidden class="cybr-btn__tag">{{rc}}</span>
       </button>
-      <button id="blue" class="cybr-btn">
+      {% csrf_token %}
+      </form>
+      <form action="POST">
+      
+        <button id="blue" class="cybr-btn">
         Right<span aria-hidden>_</span>
         <span aria-hidden class="cybr-btn__glitch">BLUE_</span>
-        <span id="blue-counter" aria-hidden class="cybr-btn__tag">0</span>
-      </button>   
-      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
-      <script src="{% static '/js/click.js' %}" type="text/javascript"></script>
+        <span id="blue-counter" aria-hidden class="cybr-btn__tag">{{bc}}</span>
+        </button>
+        {% csrf_token %}
+        </form>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+          crossorigin="anonymous"></script>
+        <script src="{% static '/js/click.js' %}" type="text/javascript"></script>
 </body>
 </html>
