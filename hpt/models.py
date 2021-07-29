@@ -1,6 +1,10 @@
 from django.db import models
 
 # Create your models here.
-class Mymodel(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
+class Blue(models.Model):
+    count = models.IntegerField()
+    time = models.FloatField()
+
+class Red(models.Model):
+    count = models.IntegerField()
+    time = models.FloatField()
