@@ -1,10 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Red, Blue
+
+from .mean import Mean
 # Create your views here.
 def index(request):
      red = len(Red.objects.all())
      blue = len(Blue.objects.all())
+     m = Mean()
+     print(m.blue_time)
      
      count = {
           "red":red,
