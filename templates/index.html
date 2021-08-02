@@ -250,7 +250,7 @@ body .cybr-btn + .cybr-btn {
 				csrfmiddlewaretoken: document.getElementsByName('csrfmiddlewaretoken')[0].value
 			},
 			function(data, status){
-				alert(secs)
+        alert("red:" + secs)
 			});
 			d = new Date();
 		});
@@ -268,8 +268,8 @@ body .cybr-btn + .cybr-btn {
 				time: secs,
 				csrfmiddlewaretoken: document.getElementsByName('csrfmiddlewaretoken')[0].value
 			},
-			function(data, status){
-				alert(secs)
+        function (data, status) {
+          alert("blue : " + secs)
 			});
 			d = new Date();
 		})
