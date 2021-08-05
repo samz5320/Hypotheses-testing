@@ -31,3 +31,6 @@ def red(request):
           time = data['time']
           Red.objects.create(count=1, time=time)
      return HttpResponse("<h2>OK</h2>")
+
+
+
