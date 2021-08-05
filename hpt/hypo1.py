@@ -1,4 +1,4 @@
-from mean import Mean
+from .mean import Mean
 from pymongo import MongoClient
 import pandas as pd
 from scipy import stats
@@ -7,7 +7,7 @@ from scipy.stats import ttest_1samp
 import numpy as np
 
 
-class hypo1:
+class Hypo1:
     def __init__(self):
         # h0 is mean time for a click is 3sec
         # h1 is its not.
@@ -28,9 +28,9 @@ class hypo1:
         s1="we are rejecting null hypothesis"
         s2="we are accepting null hypothesis"
         if self.pval < 0.05:    # alpha value is 0.05 or 5%
-            print(s1)
+            self.op = s1
         else:
-            print(s2)
+            self.op = s2
 
-h=hypo1()
-print(h)
+h=Hypo1()
+#print(h)
