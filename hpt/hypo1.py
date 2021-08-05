@@ -24,7 +24,7 @@ class Hypo1:
 
         self.tset,self.pval=ttest_1samp(self.ages_all,3.5)
 
-        print("p-values",self.pval)
+        #print("p-values",self.pval)
         s1="we are rejecting null hypothesis"
         s2="we are accepting null hypothesis"
         if self.pval < 0.05:    # alpha value is 0.05 or 5%

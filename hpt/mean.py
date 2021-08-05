@@ -57,4 +57,4 @@ class Mean:
 
         #print( str(total_docs))
 m = Mean()
-print(m)
+

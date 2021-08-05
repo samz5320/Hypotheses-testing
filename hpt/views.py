@@ -8,9 +8,9 @@ def index(request):
      red = len(Red.objects.all())
      blue = len(Blue.objects.all())
      m = Mean()
-     print(m.blue_time)
+     #print(m.blue_time)
      h=Hypo1()
-     print(h.op)
+     #print(h.op)
      count = {
           "red":red,
           "blue":blue,

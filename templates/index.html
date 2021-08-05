@@ -23,13 +23,15 @@
 }
 
 body {
+  
   display: flex;
   align-items: center;
   
   justify-content: center;
-  min-height: 100vh;
+  
   font-family: 'Cyber', sans-serif;
   background: linear-gradient(90deg, #f5ed00 70%, #e6de00 70%), #fff700;
+  
 }
 
 body .cybr-btn + .cybr-btn {
@@ -208,11 +210,41 @@ body .cybr-btn + .cybr-btn {
 .cybr-btn:nth-of-type(2) {
   --primary-hue: 260;
 }
+    .hypo{
+      
+      position: fixed;
+      align-items: center;
+      top: 25rem;
+      left: 33rem;
+      font-size: 25px;
+      font-family: 'Cyber', sans-serif;
+      padding: 20px;
+      
+      border: 3px solid black;
+      border-radius: 10px;
+      
+    }
+    h2 {
+      font-family: 'Cyber', sans-serif;
+      position: fixed;
+      top: 80px;
+      font-size: 25px;
+      left: 30rem;
+      padding: 20px;
+      border: 3px solid black;
+      border-radius: 10px;
 
-
+    }
     </style>
 </head>
 <body>
+  <section>
+    <h2>
+      Ho : user clicks a button before 3seconds<br>H1 : user clicks a button after 3seconds
+    </h2>
+  </section>
+  
+  <section>
 	{% csrf_token %}
 	<button id="red" class="cybr-btn">
 	RED<span aria-hidden>_</span>
@@ -225,9 +257,14 @@ body .cybr-btn + .cybr-btn {
 	<span aria-hidden class="cybr-btn__glitch">BLUE_</span>
 	<span id="blue-counter" aria-hidden class="cybr-btn__tag">{{blue}}</span>
 	</button>
-  <br>
-  <p>{{ op }}</p>
-
+  </section>
+  
+  <section class="hypo">
+    <div class="hypo-content">
+      <p>{{ op }}</p>
+    </div>
+    </section>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
           crossorigin="anonymous"></script>
     <!--<script src="{% static '/js/click.js' %}" type="text/javascript"></script>-->
@@ -277,4 +314,5 @@ body .cybr-btn + .cybr-btn {
 		})
 	</script>
 </body>
+
 </html>
