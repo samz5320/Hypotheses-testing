@@ -34,6 +34,11 @@ def red(request):
           Red.objects.create(count=1, time=time)
      return HttpResponse("<h2>OK</h2>")
 
+def humans(request):
+    f = open('humans.txt', 'r')
+    file_content = f.read()
+    f.close()
+    return HttpResponse(file_content, content_type="text/plain")
 #def hypotest(request)
 #if request.method="POST":
 #     h=hypo1

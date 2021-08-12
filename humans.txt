@@ -1,0 +1,13 @@
+/* Author */
+    Name: Sanjay Aradhyamath.
+	Linkedin: https://www.linkedin.com/in/sanjay-aradhyamath/  
+	Location: Bangalore, India.
+
+/* THANKS */
+	Name: Umraz Khan 
+
+/* SITE */
+    Site name:  Hypothesis Testing
+	Site URL:   https://hypoappl.herokuapp.com/
+	Last update: 8/13/2021
+	Built with : Python,Django,MongoDB,HTML,CSS,JavaScript,Heroku
