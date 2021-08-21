@@ -23,22 +23,22 @@
 }
 
 body {
-  top: 200px;
+  max-width:100%;
+  top: 5rem;
   position: relative;
   display: flex;
   align-items: center;
+  flex-direction:column;
+  left : 10px;
+  right:10px;  
   
-  justify-content: center;
   
   font-family: 'Cyber', sans-serif;
   background: linear-gradient(90deg, #f5ed00 70%, #e6de00 70%), #fff700;
   
 }
 
-body .cybr-btn + .cybr-btn {
-  margin-top: 0rem;
-  margin: 50px;
-}
+
 
 .cybr-btn {
   --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
@@ -90,7 +90,7 @@ body .cybr-btn + .cybr-btn {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: 20px;
   right: 0;
   bottom: 0;
   clip-path: var(--clip);
@@ -213,24 +213,24 @@ body .cybr-btn + .cybr-btn {
 }
     .hypo{
       
-      position: fixed;
+      position: relative;
       align-items: center;
-      top: 25rem;
-      left: 33rem;
+      top: 30px;
       font-size: 25px;
       font-family: 'Cyber', sans-serif;
       padding: 20px;
-      
+      left:30px;
       border: 3px solid black;
       border-radius: 10px;
       
     }
     h2 {
+      max-width:100%;
       font-family: 'Cyber', sans-serif;
-      position: fixed;
-      top: 80px;
+      position: relative;
+      left:30px;
       font-size: 25px;
-      left: 30rem;
+      
       padding: 20px;
       border: 3px solid black;
       border-radius: 10px;
